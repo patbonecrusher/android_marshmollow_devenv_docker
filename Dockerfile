@@ -23,4 +23,11 @@ RUN apt-get update && apt-get install -y \
   gawk \
   bc \
   rsync \
-  && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* \
+  && cd /tmp \
+  && wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tgz \
+  && tar -xvf Python-3.6.3.tgz \
+  && cd Python-3.6.3 \
+  && ./configure --enable-optimizations \
+  && make -j8 && make install 
+
