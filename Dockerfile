@@ -29,6 +29,6 @@ RUN apt-get update && apt-get install -y \
   && wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tgz \
   && tar -xvf Python-3.6.3.tgz \
   && cd Python-3.6.3 \
-  && ./configure --enable-optimizations \
+  && ./configure --enable-optimizations --prefix /usr \
   && make -j8 && make install 
 
