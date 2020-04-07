@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
   lib32z-dev \
   libgl1-mesa-dev \
   libxml2-utils \
+  libssl-dev \
   xsltproc \
   unzip \
   gawk \
